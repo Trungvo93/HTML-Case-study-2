@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Work Sans", sans-serif;
+}
+
+aside {
+  background-color: #f6f5f7;
+  height: 100vh;
+}
+aside .aside__logo {
+  height: 70px;
+}
+aside .aside__logo img {
+  display: block;
+  height: 50px;
+}
+aside .aside__customer ul {
+  list-style: none;
+  padding: 0px;
+}
+aside .aside__customer li {
+  padding-top: 1rem;
+}
+aside .aside__customer a {
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+aside .aside__customer i {
+  padding-right: 0.7rem;
+}
+
+article .header {
+  height: 70px;
+  background-color: #928e97;
+  width: 75%;
+  position: fixed;
+  right: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2rem;
+}
+article .header__search input {
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  border: 0;
+}
+article .header__search:hover {
+  cursor: auto;
+}
+article .header__search i {
+  font-size: 1.3rem;
+  vertical-align: middle;
+  color: black;
+}
+article .header__customs a {
+  color: black;
+  padding: 0 0.5rem;
+}
+
+/*# sourceMappingURL=main.css.map */
