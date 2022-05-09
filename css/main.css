@@ -5,8 +5,12 @@
   font-family: "Work Sans", sans-serif;
 }
 
+body {
+  min-width: 575px;
+}
+
 aside {
-  background-color: #f6f5f7;
+  background-color: hsla(0deg, 0%, 100%, 0.05);
   height: 100vh;
   padding-bottom: 70px;
 }
@@ -38,8 +42,8 @@ article {
 }
 article header {
   height: 70px;
-  background-color: #928e97;
-  width: 83.35%;
+  background-color: #e74c3c;
+  width: 83.34%;
   position: fixed;
   right: 0px;
   z-index: 999;
@@ -61,10 +65,22 @@ article .header__search i {
   font-size: 1.3rem;
   vertical-align: middle;
   color: black;
+  padding-left: 0.5rem;
+}
+article .header__search i:hover {
+  color: white;
 }
 article .header__customs a {
-  color: black;
-  padding: 0 0.5rem;
+  color: lightyellow;
+  padding: 0 0.7rem;
+  font-size: 1.2rem;
+}
+article .header__customs a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+article .header__customs img {
+  width: 40px;
+  border-radius: 40px;
 }
 article main {
   position: relative;
@@ -116,9 +132,6 @@ article .main__left__today-music .main__left__today-music--item .main__left__tod
 article .main__left__today-music .main__left__today-music--item .main__left__today-music-img:hover .main__left__today-music--overlay {
   opacity: 1;
 }
-article .main__left__today-music .main__left__today-music--item:nth-child(2) {
-  padding-left: 0px;
-}
 article .main__right {
   padding-top: 1rem;
 }
@@ -157,6 +170,14 @@ article .main__right .main__right--kind-music a:last-child {
 article .main__right .main__right--kind-music a:hover {
   background-color: #e74c3c;
   color: white;
+}
+article .main__right ul {
+  list-style: none;
+}
+article .main__right .info-data {
+  clear: both;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 /*# sourceMappingURL=main.css.map */
