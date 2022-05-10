@@ -21,8 +21,7 @@ body{
 aside {
 
     background-color: $bg-color-sidebar;
-    height: 100vmax;
-    padding-bottom: 70px;
+    max-height: 100%;
 
     .aside__logo {
         height: 70px;
@@ -50,6 +49,9 @@ aside {
 
     .aside__customer i {
         padding-right: 0.7rem;
+    }
+    .aside__customer p{
+        display: inline-block;
     }
 
 }
@@ -118,6 +120,7 @@ article {
 
         h3 {
             flex: 100%;
+            padding-left: 1rem;
         }
 
         .main__left__today-music--item {
@@ -168,12 +171,14 @@ article {
         display: flex;
         flex-wrap: wrap;
         padding-top: 1rem;
+        
 
         .main__left__feel-music__head{
             flex:100%;
             h3{
                 display: inline-block;
                 width: 49%;
+                padding-left: 1rem;
             }
             p{
                 display: inline-block;
@@ -232,6 +237,39 @@ article {
                 opacity: 1;
             }
             
+        }
+    }
+    .main__left__for-you{
+        display: flex;
+        flex-wrap: wrap;
+        .main__left__for-you--head{
+            flex: 100%;
+            padding-left: 1rem;
+        }
+        .main__left__for-you--slide{
+            flex: 100%;
+            .main__left__for-you--slide--item {
+                display: flex;
+                .for-you-item{
+                    flex: 33%;
+                    padding: 1rem;
+                    a{
+                        text-decoration: none;
+                        color: #000000;
+                    }
+                    img{
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                    h3{
+                        font-size: 1rem;
+                        padding-top: 1rem;
+                    }
+                    p{
+                        font-size: 0.7rem;
+                    }
+                }
+            }
         }
     }
 
@@ -337,6 +375,7 @@ footer{
     flex-wrap: nowrap;
     background-color: $color-blue;
     color: white;
+    align-items: center;
     .music-player-name{
         flex: 25%;
         display: flex;
@@ -351,6 +390,7 @@ footer{
         .music-player-name__info{
             padding-left: 10px;
             height: 50px;
+            width: 100%;
             h3{
                 font-size: 1rem;
             }
@@ -364,6 +404,37 @@ footer{
                 vertical-align: middle;
             }
         }
+    }
+    .music-player{
+        flex:50%;
+        audio{
+            width: 100%;
+            
+        }
+    }
+
+    .music-player-list{
+        flex: 25%;
+        text-align: end;
+        padding-right: 1rem;
+        a{
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0.3rem;
+            padding-right: 1rem;
+            border-radius: 5px;
+            color:white;
+        }
+        .music-player-list__show-list{
+            text-decoration: none;
+            font-size: 0.8rem;
+            background-color: $color-ograne;
+            padding: 0.5rem;
+            border-radius: 5px;
+            color: white;
+
+        }
+        
     }
     
 }
