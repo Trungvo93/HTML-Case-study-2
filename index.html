@@ -53,18 +53,28 @@
             <article class="col-xs-12 col-sm-11 col-md-11 col-lg-10 p-0">
                 <header>
                     <form action="#" class="header__search" title="Tìm kiếm">
-                        <input type="search" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV..." >
+                        <input type="search" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV...">
                         <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
                     </form>
                     <div class="header__customs">
-                        <a href="" title="Chủ đề"><i class="fa-solid fa-brush"></i></a>
+                        <a href="" title="Chủ đề" class="header__customs__combine">
+                            <i class="fa-solid fa-brush"></i>
+                        </a>
+                        <a href="" title="Nâng cấp VIP" class="header__customs__combine">
+                            <i class="bi bi-gem"></i>
+                        </a>
+                        <a href="" title="Cài đặt" class="header__customs__combine">
+                            <i class="bi bi-gear"></i>
+                        </a>
 
-                        <a href="" title="Nâng cấp VIP"><i class="bi bi-gem"></i></a>
-                        <a href="" title="Cài đặt"><i class="bi bi-gear"></i></a>
+
 
                         <a href="">
                             <!-- <i class="fa-solid fa-user"></i> -->
                             <img src="media/img/avatar.jpg" alt="" title="Cá nhân">
+                        </a>
+                        <a href="" title="Show" class="header__customs__combine--show">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
                         </a>
                     </div>
                 </header>
@@ -241,21 +251,30 @@
                                                     <div class="main__left__for-you--slide--item">
                                                         <div class="for-you-item">
                                                             <a href="">
-                                                                <img src="media/img/em-dau-roi-day.webp" alt="">
+                                                                <div class="zoom-img">
+                                                                    <img src="media/img/em-dau-roi-day.webp" alt="">
+                                                                </div>
+
                                                                 <h3>Em Đau Rồi Đấy</h3>
                                                                 <p>Dương Yến Phi</p>
                                                             </a>
                                                         </div>
                                                         <div class="for-you-item">
                                                             <a href="">
-                                                                <img src="media/img/hat-cho-em.webp" alt="">
+                                                                <div class="zoom-img"><img
+                                                                        src="media/img/hat-cho-em.webp" alt="">
+                                                                </div>
+
                                                                 <h3>Hát Cho Em</h3>
                                                                 <p>ISAAC</p>
                                                             </a>
                                                         </div>
                                                         <div class="for-you-item">
                                                             <a href="">
-                                                                <img src="media/img/lau-roi-khong-cuoi.webp" alt="">
+                                                                <div class="zoom-img">
+                                                                    <img src="media/img/lau-roi-khong-cuoi.webp" alt="">
+                                                                </div>
+
                                                                 <h3>Lâu Rồi Không Cười</h3>
                                                                 <p>Phạm Nguyên Ngọc, buitruonglinh</p>
                                                             </a>
@@ -266,21 +285,31 @@
                                                     <div class="main__left__for-you--slide--item">
                                                         <div class="for-you-item">
                                                             <a href="">
-                                                                <img src="media/img/dau-biet-em-khong-can.webp" alt="">
+                                                                <div class="zoom-img"><img
+                                                                        src="media/img/dau-biet-em-khong-can.webp"
+                                                                        alt="">
+                                                                </div>
+
                                                                 <h3>Dẫu Biết Em Sẽ Không Cần</h3>
                                                                 <p>Phương NP</p>
                                                             </a>
                                                         </div>
                                                         <div class="for-you-item">
                                                             <a href="">
-                                                                <img src="media/img/cong-chua-bong-bong.webp" alt="">
+                                                                <div class="zoom-img">
+                                                                    <img src="media/img/cong-chua-bong-bong.webp"
+                                                                        alt="">
+                                                                </div>
+
                                                                 <h3>Công Chúa Bong Bóng</h3>
                                                                 <p>Huy Vạc</p>
                                                             </a>
                                                         </div>
                                                         <div class="for-you-item">
                                                             <a href="">
-                                                                <img src="media/img/city-pop.webp" alt="">
+                                                                <div class="zoom-img"><img src="media/img/city-pop.webp"
+                                                                        alt=""></div>
+
                                                                 <h3>City Pop</h3>
                                                                 <p>Groove, Zury</p>
                                                             </a>
@@ -439,12 +468,16 @@
                     <audio src="media/mp3/DoiMiEmDangUSau-DongNhi-7196808.mp3" controls></audio>
                 </div>
                 <div class="music-player-list">
-                    <a href="" title="Thích"><i class="fa-solid fa-heart"></i></a>
-                    <a href="" title="Karaoke"><i class="fa-solid fa-microphone-lines"></i></a>
-                    <a href="" title="Chia sẻ"><i class="fa-solid fa-share-nodes"></i></a>
-                    <a href="" title="Thêm vào playlist"><i class="fa-solid fa-plus"></i></a>
-                    <a href="" class="music-player-list__show-list"><i class="bi bi-music-note-list"
-                            title="Danh sách phát"></i></a>
+                    <a href="" title="Thích" class="music-player-list__combie"><i class="fa-solid fa-heart"></i></a>
+                    <a href="" title="Karaoke" class="music-player-list__combie"><i
+                            class="fa-solid fa-microphone-lines"></i></a>
+                    <a href="" title="Chia sẻ" class="music-player-list__combie"><i
+                            class="fa-solid fa-share-nodes"></i></a>
+                    <a href="" title="Thêm vào playlist" class="music-player-list__combie"><i
+                            class="fa-solid fa-plus"></i></a>
+
+                    <a href="" class="music-player-list__show-list"><i class="bi bi-music-note-list" title="Danh sách phát"></i></a>
+                    <a href="" class="music-player-list__combie--show"><i class="fa-solid fa-ellipsis-vertical"></i></a>
 
                 </div>
             </footer>

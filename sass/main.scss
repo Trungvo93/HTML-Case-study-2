@@ -107,9 +107,13 @@ article {
         flex: 35%;
         text-align: end;
         a {
-            color: lightyellow;
+            text-decoration: none;
+            color: lightyellow ;
             padding: 0 0.7rem;
             font-size: 1.2rem;
+        }
+        .header__customs__combine--show{
+            display: none;
         }
     }
     .header__customs a:hover{
@@ -136,19 +140,9 @@ article {
             flex: 100%;
             padding-left: 1rem;
         }
-
         .main__left__today-music--item {
             flex: 25%;
-
-            img {
-                width: 100%;
-                border-radius: 5px;
-                margin-bottom: 0.5rem;
-                display: block;
-            }
-
             padding: 1rem;
-
             a {
                 text-decoration: none;
                 color: $font-color;
@@ -158,6 +152,13 @@ article {
             }
             .main__left__today-music-img{
                 position: relative;
+                overflow: hidden;
+                margin-bottom: 0.5rem;
+                border-radius: 5px;
+                img{
+                    width: 100%;
+                    transition: transform .5s ease;
+                } 
             }
             .main__left__today-music--overlay {
                 width: 100%;
@@ -181,6 +182,14 @@ article {
 
             .main__left__today-music-img:hover .main__left__today-music--overlay{
                 opacity: 1;
+                
+            }
+            .main__left__today-music-img:hover{
+                
+                img{
+                    transform: scale(1.2);
+                    border-radius: 5px;
+                }  
             }
         }
     }
@@ -215,14 +224,6 @@ article {
         .main__left__feel-music--item {
             flex: 33%;
             position:relative;
-
-            img {
-                width: 100%;
-                border-radius: 5px;
-                margin-bottom: 0.5rem;
-                display: block;
-            }
-
             padding: 1rem;
 
             a {
@@ -234,6 +235,13 @@ article {
             }
             .main__left__feel-music--img{
                 position: relative;
+                overflow: hidden;
+                border-radius: 5px;
+                margin-bottom: 0.5rem;
+                img{
+                    width: 100%;
+                    transition: transform .5s ease;
+                } 
             }
             .main__left__feel-music--overlay {
                 width: 100%;
@@ -257,7 +265,12 @@ article {
             .main__left__feel-music--img:hover .main__left__feel-music--overlay{
                 opacity: 1;
             }
-            
+            .main__left__feel-music--img:hover {
+                img{
+                    transform: scale(1.2);
+                    border-radius: 5px;
+                } 
+            }
         }
     }
     .main__left__for-you{
@@ -272,9 +285,11 @@ article {
             flex: 100%;
             .main__left__for-you--slide--item {
                 display: flex;
+                
                 .for-you-item{
                     flex: 33%;
                     padding: 1rem;
+                    
                     a{
                         text-decoration: none;
                         color: $font-color;
@@ -282,10 +297,18 @@ article {
                     a:hover{
                         color: $color-blue;
                     }
-                    img{
-                        width: 100%;
+                    .zoom-img{
+                        overflow: hidden;
                         border-radius: 5px;
+                        img{
+                            width: 100%;
+                        transition: transform .5s ease;
+                        }
+                        img:hover{
+                            transform: scale(1.2);
+                        } 
                     }
+                    
                     h3{
                         font-size: 1rem;
                         padding-top: 1rem;
@@ -421,6 +444,7 @@ footer{
         align-items: center;
         .music-player-name__img{
             padding-left: 10px;
+            
             img{
                 height: 50px;
                 border-radius: 5px;
@@ -448,7 +472,6 @@ footer{
         flex:50%;
         audio{
             width: 100%;
-            
         }
     }
 
@@ -594,6 +617,28 @@ footer{
     article{
         header{
             width: 100%;
+            .header__search{
+                flex: 80%;
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                i{
+                    font-size: large;
+                }
+            }
+            .header__customs{
+                flex: 20%;
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: end;
+                
+                .header__customs__combine{
+                    display: none;
+                }
+                .header__customs__combine--show{
+                    display:inline;
+                }
+            }
         }
         .main__right{
             .main__right--list-music{
@@ -608,5 +653,37 @@ footer{
         }
         
     }
-    
+    footer{
+        .music-player-name{
+            .music-player-name__img{
+                img{
+                    border-radius: 15px;
+                }
+                
+            }
+        }
+        .music-player{
+            flex: 60%;
+        }
+        .music-player-list{
+            flex: 15%;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            margin-left: 5px;
+            i{
+                font-size: small;
+                padding: 4px;
+                
+            }
+            .music-player-list__combie{
+                display: none;
+            }
+            .music-player-list__combie--show{
+                display: inline-block;
+                
+            }
+        }
+    }
 }
