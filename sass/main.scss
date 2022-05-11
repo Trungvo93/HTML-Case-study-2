@@ -382,8 +382,11 @@ article {
                     padding: 1rem;
                     font-size: 1.8rem;
                     text-align: center;
-                    width: 5rem;
-                    height: 5rem;
+                    
+                    p{
+                        width: 40px;
+                        // height: 5rem;
+                    }
                 }
                 .rank-name{
                     padding-top: 1rem;
@@ -688,7 +691,6 @@ footer{
             }
             .music-player-list__combie--show{
                 display: inline-block;
-                
             }
         }
     }

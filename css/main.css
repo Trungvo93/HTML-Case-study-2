@@ -332,8 +332,9 @@ article .main__right .main__right--list-music .info-data .rank-number {
   padding: 1rem;
   font-size: 1.8rem;
   text-align: center;
-  width: 5rem;
-  height: 5rem;
+}
+article .main__right .main__right--list-music .info-data .rank-number p {
+  width: 40px;
 }
 article .main__right .main__right--list-music .info-data .rank-name {
   padding-top: 1rem;
