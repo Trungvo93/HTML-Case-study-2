@@ -411,13 +411,14 @@ footer .music-player-list .music-player-list__show-list {
   color: white;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
   aside {
     padding: 0.5rem !important;
   }
   aside .aside__logo {
     width: 100%;
     text-align: center;
+    justify-content: center;
   }
   aside .aside__logo img {
     height: 30px;
@@ -450,6 +451,52 @@ footer .music-player-list .music-player-list__show-list {
     font-size: 0.8rem;
     padding: 0.1rem;
     padding-right: 0.4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  article header .header__customs a {
+    font-size: 0.8rem;
+  }
+  article header .header__customs img {
+    width: 20px;
+    border-radius: 20px;
+  }
+
+  footer .music-player-name {
+    flex: 10%;
+  }
+  footer .music-player-name .music-player-name__img img {
+    padding-left: 3vmax;
+    border-radius: 5px;
+    padding-right: 3vmax;
+  }
+  footer .music-player-name .music-player-name__info h3 {
+    display: none;
+  }
+  footer .music-player-name .music-player-name__info p {
+    display: none;
+  }
+  footer .music-player-list {
+    flex: 35%;
+  }
+  footer .music-player-list a {
+    font-size: 0.8rem;
+    padding: 0.1rem;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  aside {
+    display: none;
+  }
+
+  article header {
+    width: 100%;
+  }
+  article .main__right .main__right--list-music .info-data .rank-number {
+    width: 15vmax;
+    height: 15vmax;
   }
 }
 
