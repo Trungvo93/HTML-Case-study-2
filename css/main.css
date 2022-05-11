@@ -312,8 +312,8 @@ article .main__right .main__right--list-music .info-data .rank-number {
   padding: 1rem;
   font-size: 1.8rem;
   text-align: center;
-  width: 5vmax;
-  height: 5vmax;
+  width: 5rem;
+  height: 5rem;
 }
 article .main__right .main__right--list-music .info-data .rank-name {
   padding-top: 1rem;
@@ -440,8 +440,8 @@ footer .music-player-list .music-player-list__show-list {
     font-size: 2vmax;
   }
   article .main__right .main__right--list-music .info-data .rank-number {
-    width: 7vmax;
-    height: 7vmax;
+    width: 5rem;
+    height: 5rem;
   }
 
   footer .music-player-name .music-player-name__info p {
@@ -495,8 +495,8 @@ footer .music-player-list .music-player-list__show-list {
     width: 100%;
   }
   article .main__right .main__right--list-music .info-data .rank-number {
-    width: 15vmax;
-    height: 15vmax;
+    width: 5rem;
+    height: 5rem;
   }
 }
 
