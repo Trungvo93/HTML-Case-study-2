@@ -586,9 +586,9 @@ footer{
             flex: 10%;
             .music-player-name__img{
                 img{
-                    padding-left: 3vmax;
-                    border-radius: 5px;
-                    padding-right: 3vmax;
+                    
+                    border-radius: 10px;
+                    padding: 5px;
                 }
             }
             .music-player-name__info{
@@ -658,15 +658,18 @@ footer{
     }
     footer{
         .music-player-name{
+            flex: 15%;
             .music-player-name__img{
+                
                 img{
-                    border-radius: 15px;
+                    border-radius: 10px;
+                    padding: 5px;
                 }
                 
             }
         }
         .music-player{
-            flex: 60%;
+            flex: 70%;
         }
         .music-player-list{
             flex: 15%;
