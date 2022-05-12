@@ -366,6 +366,7 @@ article .main__right .main__right--list-music .number-4 .rank-number, article .m
 }
 
 footer {
+  z-index: 99999;
   display: flex;
   position: fixed;
   bottom: 0px;
